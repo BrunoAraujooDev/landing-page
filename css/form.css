@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#tela {
+    background-image: url(../assets/gol.jpg); 
+    background-size: cover;
+    
+}
+
+#campo-mensagem {
+    display: flex; 
+    flex-direction: row;
+    background-color: #000000ba; 
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    color: #e6e252b0;
+    font-family: Roboto Slab ,sans-serif;
+    margin: 300px 500px;
+
+}
+
+@media screen and (max-width: 960px) {
+    #campo-mensagem {
+        margin: 300px 0px;
+    }
+
+}

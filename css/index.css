@@ -1,0 +1,123 @@
+
+            * {
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            #container {
+                display: flex;
+                flex-direction: row;
+                height: 100vh;
+                font-family: "Roboto Slab", sans-serif;     
+            }
+
+            #lado-esquerdo {
+                background: url(../assets/torcedor.jpg) no-repeat;
+                background-size: cover;
+                
+            }
+
+            .box-esquerdo {
+                background-color: #000000ba;
+                padding: 30px;
+                border-radius: 20px;
+                margin: 100px;
+                color: #e6e252b0;
+            }
+
+            .box-esquerdo h1, h2 {
+                margin-bottom: 10px;
+            }
+
+
+            #lado-direito {
+                display: flex;
+                background-color: rgb(80 11 25);
+                padding: 30px;
+                color: #e6e252b0;
+            }
+
+            .paragrafo {
+                text-align: justify;
+                margin-bottom: 20px;
+                
+            }
+
+            .campo-formulario {
+                margin-top: 10px;
+            }
+
+            .campo-formulario label {
+                display: block;
+            }
+
+            .campo-formulario input, select {
+                padding: 5px;
+                border-radius: 5px;
+                border-width: 1px;
+                width: 250px;
+            }
+
+            .campo-data label{
+                display: flex;
+            }
+
+            .campo-data strong {
+                 margin: 20px 0px; 
+            }
+
+            .div-campo-dia {
+                display: inline-grid;
+            }
+
+            .div-campo-dia input {
+                width: 20px;
+                position: relative;
+                display: inline-block;
+            }
+
+            .div-campo-dia label {
+                position: relative;
+                display:inline-block;
+                vertical-align: top;
+                justify-content: left;
+                padding-bottom: 2px;
+            }
+
+            .div-campo-hora input{
+                width: 20px;
+                position: relative;
+                vertical-align: middle;
+            
+               
+            }
+
+            .div-campo-hora label {
+                position: relative;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            #botao-enviar {
+                margin: 30px 50px;
+                float: right;
+                background: yellow;
+                border-radius: 5px;
+                padding: 10px 30px;
+                cursor: pointer;
+                box-shadow: 1px 1px 0px #000000;
+                transition: transform 110ms;
+                font-weight: bold;
+            }
+
+            #botao-enviar:hover {
+                transform: scale(1.1);
+            }
+
+            @media screen and (max-width: 720px) {
+                #container {
+                    flex-direction: column;
+                }
+            }
+
+            

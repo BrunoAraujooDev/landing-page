@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+        <title>Fanáticos - A paixão pelo esporte</title>
+
+    </head>
+    <body>
+
+        <div id="container">
+
+            <div id="lado-esquerdo">
+                <div class="box-esquerdo">
+                    <h1>Assine já o kit torcedor e transforme a paixão pelo seu time em realidade!</h1>
+                    <h2>Receba em casa, com frete grátis, o melhor kit futebolístico do país com os seguintes itens:</h2>
+                    <ul>
+                        <li>Camisa do seu time de coração;</li>
+                        <li>Caneca personalizada;</li>
+                        <li>Toalha personalizada;</li>
+                        <li>Bandeira do seu clube;</li>
+                        <li>E vários itens surpresa!</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="lado-direito">
+                <form onsubmit="event.preventDefault();" id="formulario" action="./form.html">
+
+                    <p class="paragrafo"><strong>Preencha e envie o formulário abaixo e em breve nossa equipe de atendimento entrará em contato.</strong></p>
+
+                    <div class="campo-formulario">
+                        <label>Por favor, digite seu nome completo:</label>
+                        <input type="text" name="nome" placeholder="Preencha seu nome completo aqui">
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label>Por favor, digite seu email:</label>
+                        <input  type="email" name="email" placeholder="Preencha seu email aqui">
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label>Por favor, digite seu telefone:</label>
+                        <input id="telefone" type="tel" name="telefone" placeholder="(xx) xxxx-xxxx">
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label>Para qual time você torcer?</label>
+                        <select>
+                            <option selected disabled value="">Selecione uma opção</option>
+                            <option>Flamengo</option>
+                            <option>Fluminense</option>
+                            <option>Vasco</option>
+                            <option>Corinthians</option>
+                            <option>Palmeiras</option>
+                            <option>Santos</option>
+                            <option>São Paulo</option>
+                            <option>Internacional</option>
+                            <option>Grêmio</option>
+                            <option>Atlético MG</option>
+                            <option>Cruzeiro</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-data">
+                        <label><strong>Quais os melhores dias da semana para entrarmos em contato?</strong></label>
+                        <div class="div-campo-dia">
+                            <label><input type="radio" value="Domingo">Domingo</label>
+                            <label><input type="radio" value="Segunda-feira">Segunda-feira</label>
+                            <label><input type="radio" value="Terça-feira">Terça-feira</label>
+                            <label><input type="radio" value="Quarta-feira">Quarta-feira</label>
+                            <label><input type="radio" value="Quinta-feira">Quinta-feira</label>
+                            <label><input type="radio" value="Sexta-feira">Sexta-feira</label>
+                            <label><input type="radio" value="Sábado">Sábado</label> 
+                        </div>
+                    </div>
+                    <div class="campo-data">
+                        <label><strong>Selecione o horário para entrarmos em contato:</strong></label>
+                        <div class="div-campo-hora">
+                            <input type="checkbox" name="periodo1">
+                            <label for="periodo1">7h - 10h</label>
+                        </div>
+                        <div class="div-campo-hora">
+                            <input type="checkbox" name="periodo2">
+                            <label for="periodo2">11h - 14h</label>
+                        </div>
+                        <div class="div-campo-hora">
+                            <input type="checkbox" name="periodo3">
+                            <label for="periodo3">14h - 17h</label>
+                        </div>
+                    </div>
+                    <button id="botao-enviar" type="submit">Torcer!</button>
+                </form> 
+            </div>
+
+        </div>  
+        <script src="js/index.js"></script>
+        <noscript>Desculpe, o seu navegador não suporta JavaScript.</noscript>
+    </body>
+</html>
