@@ -13,7 +13,8 @@
 
             #lado-esquerdo {
                 background: url(../assets/torcedor.jpg) no-repeat;
-                background-size: cover;
+                background-size: 1205.670px 937px;
+                
                 
             }
 
@@ -114,9 +115,19 @@
                 transform: scale(1.1);
             }
 
-            @media screen and (max-width: 720px) {
+            @media screen and (max-width: 745px) {
                 #container {
                     flex-direction: column;
+                }
+
+                #lado-esquerdo {
+                    background-size: cover;
+                    width: 100vw;
+                    height: 100vh;
+                }
+
+                .box-esquerdo {
+                   margin: 50px;
                 }
             }
 
