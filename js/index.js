@@ -1,16 +1,26 @@
 const botaoEnviar = document.getElementById("botao-enviar");
 
-const formulario = document.getElementById("formulario");
+
 
 botaoEnviar.addEventListener("click", () => {
 
     const campoTelefone = document.getElementById("telefone");
 
+    const campoEmail = document.getElementById("campo-email");
+
+    const formulario = document.getElementById("formulario");
+
     const valorCampoTelefone = campoTelefone.value;
-    console.log(valorCampoTelefone)
+
+    const valorCampoEmail = campoEmail.value;
 
     if (valorCampoTelefone.length >= 11) {
-        formulario.submit();
+        
+        if (valorCampoEmail.indexOf("@") >= 1) {
+            formulario.submit();
+    } else {
+        alert("Preencha os dados corretamente!");
+    }
     } else {
         alert("Favor inserir o telefone com o DDD!");
     }
